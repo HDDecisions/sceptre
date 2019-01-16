@@ -301,7 +301,7 @@ class SceptrePlan(object):
         :rtype: dict
         :rtype: sceptre.stack_status.StackChangeSetStatus
         """
-        self.resolve(command=self.wait_for_cs_completion.__name__)
+        self.resolve(command=self._wait_for_cs_completion.__name__)
         return self._execute(*args)
 
     def validate(self, *args):
